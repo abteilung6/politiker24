@@ -1,7 +1,9 @@
 import React from "react";
 
+import ActivityList from "../components/ActivityList";
 import FactionIndex from "../components/charts/FactionIndex";
 import ProfileLayout from "../layout/ProfileLayout";
+import { activities } from "../data/activities";
 
 const ProfileView: React.FC = () => {
   return (
@@ -11,6 +13,7 @@ const ProfileView: React.FC = () => {
           {" "}
           <FactionIndex />
         </div>
+        <ActivityList activities={activities} />
       </ProfileLayout>
     </>
   );

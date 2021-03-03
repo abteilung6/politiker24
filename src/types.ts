@@ -3,3 +3,9 @@ export type Menu = {
   label: string;
   to: string;
 }
+
+export type Activity = {
+  id: number;
+  date: string;
+  text: string;
+}
