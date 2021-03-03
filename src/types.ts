@@ -4,6 +4,14 @@ export type Menu = {
   to: string;
 }
 
+export type Person = {
+  fullName: string;
+  faction: string;
+  title: string;
+  birthday: string;
+  theses: ReadonlyArray<string>;
+}
+
 export type Activity = {
   id: number;
   date: string;
