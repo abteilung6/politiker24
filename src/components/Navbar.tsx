@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { Menu } from "../types";
+import { Nav } from "../types";
 
 interface Props {
-  menus: Menu[];
+  navs: Nav[];
   selectedMenuId: string;
 }
 
-const Navbar: React.FC<Props> = ({ menus, selectedMenuId }) => {
+const Navbar: React.FC<Props> = ({ navs, selectedMenuId }) => {
   const [collapsed, setCollapsed] = useState(false);
 
   return (
@@ -27,7 +27,7 @@ const Navbar: React.FC<Props> = ({ menus, selectedMenuId }) => {
               />
             </div>
             <div className="hidden lg:ml-6 lg:flex lg:space-x-8">
-              {menus.map((menu) => (
+              {navs.map((menu) => (
                 <a
                   key={menu.id}
                   className={
@@ -143,7 +143,7 @@ const Navbar: React.FC<Props> = ({ menus, selectedMenuId }) => {
         id="mobile-menu"
       >
         <div className="pt-2 pb-3 space-y-1">
-          {menus.map((menu) => (
+          {navs.map((menu) => (
             <a
               key={menu.id}
               href={menu.to}

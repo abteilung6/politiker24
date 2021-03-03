@@ -1,12 +1,12 @@
 import React from "react";
 
 import Navbar from "../components/Navbar";
-import menus from "../constants/menu";
+import { navs } from "../constants/navigation";
 
 const AppLayout: React.FC = ({ children }) => {
   return (
     <>
-      <Navbar menus={menus} selectedMenuId="home" />
+      <Navbar navs={navs} selectedMenuId="home" />
       <div className="py-10">
         <header>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

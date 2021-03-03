@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 
-import ActivityList from "../components/ActivityList";
 import FactionIndex from "../components/charts/FactionIndex";
 import PersonInformation from "../components/PersonInformation";
+import Tabbar from "../components/Tabbar";
+import TabbarContent from "../components/TabbarContent";
 import ProfileLayout from "../layout/ProfileLayout";
-import { activities } from "../data/activities";
+import { tabs } from "../constants/navigation";
+
 import { person } from "../data/persons";
 
 const ProfileView: React.FC = () => {
+  const [selectedTabId, setSelectedTabId] = useState<string | undefined>(
+    tabs.length ? tabs[0].id : undefined
+  );
   return (
     <>
       <ProfileLayout>
@@ -16,7 +21,12 @@ const ProfileView: React.FC = () => {
           {" "}
           <FactionIndex />
         </div>
-        <ActivityList activities={activities} />
+        <Tabbar
+          tabs={tabs}
+          selectedTabId={selectedTabId}
+          onClick={(selectedTabId) => setSelectedTabId(selectedTabId)}
+        />
+        <TabbarContent selectedTabId={selectedTabId} />
       </ProfileLayout>
     </>
   );

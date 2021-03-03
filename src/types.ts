@@ -1,7 +1,12 @@
-export type Menu = {
+export type Nav = {
   id: string;
   label: string;
   to: string;
+}
+
+export type Tab = {
+  id: string;
+  label: string;
 }
 
 export type Person = {
