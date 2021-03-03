@@ -14,7 +14,8 @@ export type Person = {
   faction: string;
   title: string;
   birthday: string;
-  theses: ReadonlyArray<string>;
+  contributionCount: string;
+  ranking: string;
 }
 
 export type Activity = {

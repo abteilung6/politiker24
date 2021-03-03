@@ -5,5 +5,6 @@ export const person: Person = {
   faction: 'DIE LINKE', 
   title: 'Prof. Dr.-Ing.', 
   birthday: '10.07.1960',
-  theses: ['bachelorarbeit.pdf', 'masterarbeit.pdf']
+  contributionCount: '65',
+  ranking: '33'
 }

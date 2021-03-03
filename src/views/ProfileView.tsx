@@ -17,10 +17,7 @@ const ProfileView: React.FC = () => {
     <>
       <ProfileLayout>
         <PersonInformation person={person} />
-        <div style={{ height: 400 }}>
-          {" "}
-          <FactionIndex />
-        </div>
+        <FactionIndex />
         <Tabbar
           tabs={tabs}
           selectedTabId={selectedTabId}

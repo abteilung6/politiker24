@@ -38,44 +38,23 @@ const PersonInformation: React.FC<Props> = ({ person }) => {
             <dt className="text-sm font-medium text-gray-500">Geburtstag</dt>
             <dd className="mt-1 text-sm text-gray-900">{person.birthday}</dd>
           </div>
+          <div className="sm:col-span-1">
+            <dt className="text-sm font-medium text-gray-500">Beiträge</dt>
+            <dd className="mt-1 text-3xl font-semibold text-gray-900">12</dd>
+          </div>
+          <div className="sm:col-span-1">
+            <dt className="text-sm font-medium text-gray-500">Ranking</dt>
+            <dd className="mt-1 text-3xl font-semibold text-gray-900">142</dd>
+          </div>
           <div className="sm:col-span-2">
-            <dt className="text-sm font-medium text-gray-500">
-              Abschlussarbeiten
-            </dt>
-            <dd className="mt-1 text-sm text-gray-900">
-              <ul className="border border-gray-200 rounded-md divide-y divide-gray-200">
-                {person.theses.map((these, index) => (
-                  <li
-                    key={index}
-                    className="pl-3 pr-4 py-3 flex items-center justify-between text-sm"
-                  >
-                    <div className="w-0 flex-1 flex items-center">
-                      <svg
-                        className="flex-shrink-0 h-5 w-5 text-gray-400"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                      <span className="ml-2 flex-1 w-0 truncate">{these}</span>
-                    </div>
-                    <div className="ml-4 flex-shrink-0">
-                      <a
-                        href="/"
-                        className="font-medium text-indigo-600 hover:text-indigo-500"
-                      >
-                        Download
-                      </a>
-                    </div>
-                  </li>
-                ))}
-              </ul>
+            <dt className="text-sm font-medium text-gray-500">Abzeichen</dt>
+            <dd className="mt-1 text-3xl font-semibold text-gray-900">
+              <span className="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-gray-100 text-gray-800">
+                Konservativ
+              </span>
+              <span className="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-red-100 text-red-800">
+                Negative Stimmung
+              </span>
             </dd>
           </div>
         </dl>
