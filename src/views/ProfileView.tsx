@@ -1,6 +1,6 @@
 import React from "react";
 
-import FactionIndexGraph from "../components/FactionIndexGraph";
+import FactionIndex from "../components/charts/FactionIndex";
 import ProfileLayout from "../layout/ProfileLayout";
 
 const ProfileView: React.FC = () => {
@@ -9,7 +9,7 @@ const ProfileView: React.FC = () => {
       <ProfileLayout>
         <div style={{ height: 400 }}>
           {" "}
-          <FactionIndexGraph />
+          <FactionIndex />
         </div>
       </ProfileLayout>
     </>

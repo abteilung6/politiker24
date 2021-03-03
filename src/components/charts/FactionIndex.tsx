@@ -1,11 +1,11 @@
 import React from "react";
 import { ResponsiveRadar } from "@nivo/radar";
 
-import { factionIndexData } from "../data/graphs";
+import { factionIndexData } from "../../data/graphs";
 
 export interface Props {}
 
-const FactionIndexGraph: React.FC<Props> = () => {
+const FactionIndex: React.FC<Props> = () => {
   return (
     <ResponsiveRadar
       data={factionIndexData}
@@ -36,4 +36,4 @@ const FactionIndexGraph: React.FC<Props> = () => {
   );
 };
 
-export default FactionIndexGraph;
+export default FactionIndex;
