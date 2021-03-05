@@ -2,6 +2,7 @@ import React from "react";
 import { RouteComponentProps, useHistory } from "react-router-dom";
 
 import SearchBox from "../components/SearchBox";
+import HeroSection from "../components/HeroSection";
 import Layout from "../layout/Layout";
 
 import { suggestions } from "../data/suggestions";
@@ -20,8 +21,9 @@ const LandingView: React.FC<ComposedProps> = () => {
   return (
     <>
       <Layout>
-        LandingPage
-        <SearchBox suggestions={suggestions} onSelect={onSelect} />
+        <HeroSection>
+          <SearchBox suggestions={suggestions} onSelect={onSelect} />
+        </HeroSection>
       </Layout>
     </>
   );
