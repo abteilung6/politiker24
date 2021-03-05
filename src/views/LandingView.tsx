@@ -6,6 +6,7 @@ import HeroSection from "../components/HeroSection";
 import Layout from "../layout/Layout";
 
 import { suggestions } from "../data/suggestions";
+import FeatureSection from "../components/FeatureSection";
 
 interface Props {}
 
@@ -24,6 +25,7 @@ const LandingView: React.FC<ComposedProps> = () => {
         <HeroSection>
           <SearchBox suggestions={suggestions} onSelect={onSelect} />
         </HeroSection>
+        <FeatureSection />
       </Layout>
     </>
   );
