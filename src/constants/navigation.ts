@@ -8,6 +8,5 @@ export const navs: Nav[] = [
 
 export const tabs: Tab[] = [
   {id: 'contributions', label: 'Redebeiträge'},
-  {id: 'likes', label: 'Zuneigungen'},
-  {id: 'dislikes', label: 'Abneigungen'},
+  {id: 'rates', label: 'Bewertungen'},
 ]
