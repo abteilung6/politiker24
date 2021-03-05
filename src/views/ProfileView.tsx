@@ -1,21 +1,26 @@
 import React, { useState } from "react";
+import { RouteComponentProps } from "react-router-dom";
 
 import FactionIndex from "../components/charts/FactionIndex";
 import PersonInformation from "../components/PersonInformation";
 import Tabbar from "../components/Tabbar";
 import TabbarContent from "../components/TabbarContent";
-import ProfileLayout from "../layout/ProfileLayout";
 import { tabs } from "../constants/navigation";
+import Layout from "../layout/Layout";
 
 import { person } from "../data/persons";
 
-const ProfileView: React.FC = () => {
+interface Props {}
+
+type ComposedProps = Props & RouteComponentProps;
+
+const ProfileView: React.FC<ComposedProps> = () => {
   const [selectedTabId, setSelectedTabId] = useState<string | undefined>(
     tabs.length ? tabs[0].id : undefined
   );
   return (
     <>
-      <ProfileLayout>
+      <Layout>
         <PersonInformation person={person} />
         <FactionIndex />
         <Tabbar
@@ -24,7 +29,7 @@ const ProfileView: React.FC = () => {
           onClick={(selectedTabId) => setSelectedTabId(selectedTabId)}
         />
         <TabbarContent selectedTabId={selectedTabId} />
-      </ProfileLayout>
+      </Layout>
     </>
   );
 };
