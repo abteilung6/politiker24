@@ -9,6 +9,11 @@ export type Tab = {
   label: string;
 }
 
+export type Suggestion = {
+  id: number;
+  text: string;
+}
+
 export type Person = {
   fullName: string;
   faction: string;

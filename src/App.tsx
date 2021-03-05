@@ -20,7 +20,8 @@ const App: React.FC = () => {
             render={(props) => <LandingView {...props} />}
           />
           <Route
-            path="/politiker"
+            exact
+            path={["/politiker/:id"]}
             render={(props) => <ProfileView {...props} />}
           />
           <Redirect to="/" />

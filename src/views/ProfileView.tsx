@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { RouteComponentProps } from "react-router-dom";
+import { RouteComponentProps, useRouteMatch } from "react-router-dom";
 
 import FactionIndex from "../components/charts/FactionIndex";
 import PersonInformation from "../components/PersonInformation";
@@ -15,6 +15,10 @@ interface Props {}
 type ComposedProps = Props & RouteComponentProps;
 
 const ProfileView: React.FC<ComposedProps> = () => {
+  const {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    params: { id },
+  } = useRouteMatch<{ id: string }>();
   const [selectedTabId, setSelectedTabId] = useState<string | undefined>(
     tabs.length ? tabs[0].id : undefined
   );
