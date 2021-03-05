@@ -12,6 +12,8 @@ export type Tab = {
 export type Suggestion = {
   id: number;
   text: string;
+  faction: string;
+  imageURL: string;
 }
 
 export type Person = {
