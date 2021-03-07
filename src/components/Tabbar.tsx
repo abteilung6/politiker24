@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Tab } from "../types";
 
 interface Props {
@@ -9,7 +10,7 @@ interface Props {
 
 const Tabbar: React.FC<Props> = ({ tabs, selectedTabId, onClick }) => {
   return (
-    <div className="pb-8">
+    <div className="py-8">
       <div className="border-b border-gray-200">
         <div className="sm:flex sm:items-baseline">
           <h3 className="text-lg leading-6 font-medium text-gray-900">

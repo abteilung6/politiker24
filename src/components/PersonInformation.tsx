@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Person } from "../types";
 
 interface Props {
@@ -37,25 +38,6 @@ const PersonInformation: React.FC<Props> = ({ person }) => {
           <div className="sm:col-span-1">
             <dt className="text-sm font-medium text-gray-500">Geburtstag</dt>
             <dd className="mt-1 text-sm text-gray-900">{person.birthday}</dd>
-          </div>
-          <div className="sm:col-span-1">
-            <dt className="text-sm font-medium text-gray-500">Beiträge</dt>
-            <dd className="mt-1 text-3xl font-semibold text-gray-900">12</dd>
-          </div>
-          <div className="sm:col-span-1">
-            <dt className="text-sm font-medium text-gray-500">Ranking</dt>
-            <dd className="mt-1 text-3xl font-semibold text-gray-900">142</dd>
-          </div>
-          <div className="sm:col-span-2">
-            <dt className="text-sm font-medium text-gray-500">Abzeichen</dt>
-            <dd className="mt-1 text-3xl font-semibold text-gray-900">
-              <span className="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-gray-100 text-gray-800">
-                Konservativ
-              </span>
-              <span className="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-red-100 text-red-800">
-                Negative Stimmung
-              </span>
-            </dd>
           </div>
         </dl>
       </div>

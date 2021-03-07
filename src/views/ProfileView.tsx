@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { RouteComponentProps, useRouteMatch } from "react-router-dom";
 
-import FactionIndex from "../components/charts/FactionIndex";
 import PersonInformation from "../components/PersonInformation";
 import Tabbar from "../components/Tabbar";
 import TabbarContent from "../components/TabbarContent";
@@ -26,7 +25,6 @@ const ProfileView: React.FC<ComposedProps> = () => {
     <>
       <Layout>
         <PersonInformation person={person} />
-        <FactionIndex />
         <Tabbar
           tabs={tabs}
           selectedTabId={selectedTabId}

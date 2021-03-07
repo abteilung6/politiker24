@@ -21,8 +21,15 @@ export type Person = {
   faction: string;
   title: string;
   birthday: string;
-  contributionCount: string;
-  ranking: string;
+}
+
+export type Message = {
+  id: number;
+  author: string;
+  avatarURL: string;
+  text: string;
+  likesCount: number;
+  commentsCount: number; 
 }
 
 export type Activity = {

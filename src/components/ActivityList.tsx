@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Activity } from "../types";
 import ActivityListItem from "./ActivityListItem";
 
