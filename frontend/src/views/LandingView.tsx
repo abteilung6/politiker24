@@ -2,13 +2,13 @@ import React from "react";
 import { RouteComponentProps, useHistory } from "react-router-dom";
 
 import SearchBox from "../components/SearchBox";
-import HeroSection from "../components/HeroSection";
+import HeroSection from "../components/landing/HeroSection";
+import FeatureSection from "../components/landing/FeatureSection";
+import StatsSection from "../components/landing/StatsSection";
+import FooterSection from "../components/landing/FooterSection";
 import Layout from "../layout/Layout";
 
 import { suggestions } from "../data/suggestions";
-import FeatureSection from "../components/FeatureSection";
-import StatsSection from "../components/StatsSection";
-import FooterSection from "../components/FooterSection";
 
 interface Props {}
 
