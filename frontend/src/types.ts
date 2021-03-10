@@ -32,6 +32,13 @@ export type Message = {
   commentsCount: number; 
 }
 
+export type Comment = {
+  id: number;
+  author: string;
+  avatarURL: string;
+  text: string;
+}
+
 export type Activity = {
   id: number;
   date: string;

@@ -9,7 +9,10 @@ interface Props {
 const MessageStats: React.FC<Props> = ({ message }) => {
   return (
     <div className="flex flex-row justify-between">
-      <div className="text-sm font-medium text-gray-500">
+      <button
+        type="button"
+        className="text-sm font-medium text-gray-500 hover:text-indigo-500"
+      >
         <svg
           className="w-4 h-4 pt-1 absolute"
           xmlns="http://www.w3.org/2000/svg"
@@ -25,10 +28,13 @@ const MessageStats: React.FC<Props> = ({ message }) => {
           />
         </svg>
         <div className="pl-5">{message.likesCount}</div>
-      </div>
-      <div className="text-sm font-medium text-gray-500">
+      </button>
+      <button
+        type="button"
+        className="text-sm font-medium text-gray-500 hover:text-indigo-500"
+      >
         {message.commentsCount} Kommentare
-      </div>
+      </button>
     </div>
   );
 };

@@ -4,7 +4,10 @@ import { Message } from "../../types";
 
 import MessageActions from "./MessageActions";
 import MessageContent from "./MessageContent";
+import MessagePreview from "./MessagePreview";
 import MessageStats from "./MessageStats";
+
+import { comment } from "../../data/messages";
 
 interface Props {
   message: Message;
@@ -25,6 +28,9 @@ const MessageItem: React.FC<Props> = ({ message }) => {
       </div>
       <div className="px-4 py-1 sm:px-6">
         <MessageActions />
+      </div>
+      <div className="px-4 py-1 sm:px-6">
+        <MessagePreview message={message} comment={comment} />
       </div>
     </div>
   );

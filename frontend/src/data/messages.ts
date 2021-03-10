@@ -1,4 +1,4 @@
-import { Message } from "../types";
+import { Comment, Message } from "../types";
 
 export const messages: Message[] = [
   {
@@ -26,3 +26,10 @@ export const messages: Message[] = [
     commentsCount: 34,
   },
 ]
+
+export const comment: Comment = {
+  id: 1,
+  author: 'Ferdinand Eisenholz',
+  avatarURL: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  text: 'Ducimus quas delectus ad maxime totam doloribus reiciendis ex. Tempore dolorem maiores. Similique voluptatibus tempore non ut.',
+}
