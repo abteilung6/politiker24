@@ -9,5 +9,4 @@ export const navs: Nav[] = [
 export const tabs: Tab[] = [
   {id: 'insights', label: 'Insights'},
   {id: 'rates', label: 'Meinungen'},
-  {id: 'contributions', label: 'Redebeiträge'},
 ]
