@@ -10,25 +10,6 @@ interface Props {
 const MessagePreview: React.FC<Props> = ({ message, comment }) => {
   return (
     <div className="flex flex-col">
-      <div className="flex space-x-3 p-2">
-        <div className="flex-shrink-0">
-          <img
-            className="h-6 w-6 rounded-full"
-            src={comment.avatarURL}
-            alt=""
-          />
-        </div>
-        <div className="bg-gray-100 rounded px-3 border-2 border-indigo-100">
-          <div className="text-sm">
-            <a href="/" className="font-medium text-gray-900">
-              {comment.author}
-            </a>
-          </div>
-          <div className="mt-1 text-sm text-gray-700">
-            <p>{comment.text}</p>
-          </div>
-        </div>
-      </div>
       <div>
         <div className="flex space-x-3 p-2">
           <div className="flex-shrink-0">
@@ -52,6 +33,36 @@ const MessagePreview: React.FC<Props> = ({ message, comment }) => {
             />
           </div>
         </div>
+      </div>
+      <div className="flex space-x-3 p-2">
+        <div className="flex-shrink-0">
+          <img
+            className="h-6 w-6 rounded-full"
+            src={comment.avatarURL}
+            alt=""
+          />
+        </div>
+        <div className="bg-gray-100 rounded px-3 border-2 border-indigo-100">
+          <div className="text-sm">
+            <a href="/" className="font-medium text-gray-900">
+              {comment.author}
+            </a>
+          </div>
+          <div className="mt-1 text-sm text-gray-700">
+            <p>{comment.text}</p>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-row justify-between">
+        <div>
+          <button
+            type="button"
+            className="text-gray-700 text-sm hover:text-indigo-500 pb-2 pl-3"
+          >
+            5 weitere Kommentare ansehen
+          </button>
+        </div>
+        <div className="text-gray-400 text-sm">2 von 26</div>
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ interface Props {
 
 const MessageItem: React.FC<Props> = ({ message }) => {
   return (
-    <div className="bg-white overflow-hidden shadow divide-y divide-gray-200">
+    <div className="bg-white overflow-hidden shadow hover:shadow-lg divide-y divide-gray-200">
       <div className="px-4 py-6 sm:px-6">
         <ul className="space-y-8">
           <li>
