@@ -1,8 +1,8 @@
 import React from "react";
 
 import ActivityList from "./ActivityList";
+import Insights from "./Insights";
 import MessageList from "./message/MessageList";
-import FactionIndex from "./charts/FactionIndex";
 
 import { activities } from "../data/activities";
 import { messages } from "../data/messages";
@@ -17,7 +17,7 @@ const TabbarContent: React.FC<Props> = ({ selectedTabId }) => {
   } else if (selectedTabId === "rates") {
     return <MessageList messages={messages} />;
   } else if (selectedTabId === "insights") {
-    return <FactionIndex />;
+    return <Insights />;
   } else {
     return null;
   }

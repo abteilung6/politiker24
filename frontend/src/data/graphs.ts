@@ -1,26 +1,26 @@
 export const factionIndexData = [
   {
     "taste": "CDU/CSU",
-    "syrah": 55
+    "PSI": 55
   },
   {
     "taste": "FDP",
-    "syrah": 98
+    "PSI": 98
   },
     {
     "taste": "AfD",
-    "syrah": 73
+    "PSI": 73
   },
   {
     "taste": "BÜNDNIS90/DIE GRÜNEN",
-    "syrah": 98
+    "PSI": 98
   },
   {
     "taste": "SPD",
-    "syrah": 80
+    "PSI": 80
   },
   {
     "taste": "DIE LINKE",
-    "syrah": 70
+    "PSI": 70
   },
 ]

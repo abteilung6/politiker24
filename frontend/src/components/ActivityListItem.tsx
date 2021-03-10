@@ -8,7 +8,7 @@ interface Props {
 
 const ActivityListItem: React.FC<Props> = ({ activity }) => {
   return (
-    <div className="bg-white px-4 py-5 sm:px-6 shadow ">
+    <div className="bg-white px-4 py-5 sm:px-6 shadow">
       <div className="flex space-x-3 border-b border-gray-200 ">
         <div className="flex-shrink-0">
           <img
